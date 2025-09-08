@@ -1,6 +1,6 @@
 # 在这个文件下编写代码，题目具体要求见README.md文件
 def main():
-    s = input("请输入重量")
+    s = input().strip
     if s.endswith('kg'):
         num = float(s[:-2])
         result = num*2.2046
