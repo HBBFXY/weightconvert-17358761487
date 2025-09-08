@@ -1,15 +1,11 @@
-# 在这个文件下编写代码，题目具体要求见README.md文件
-def main():
-    s = input().strip
-    if s.endswith('kg'):
-        num = float(s[:-2])
-        result = num*2.2046
-        print(f"对应的英制重量为{result:.3f}磅")
-    elif s.endswith('pd'):
-        num = float(s[:-2])
-        result = num /2.2046
-        print(f"对应的公制重量为{result:.3f}磅")
-    else:
-        print("输入的格式错误，请以kg或pd结尾")   
-if __name__=="__main__":
-    main()
+weight_input = input()
+unit = weight_input[:-2]
+value = float(weight_input[:-2])
+if unit = 'kg':
+    result = value*2.2046
+    printt(f"对应的英制重量为{result:.3f}磅")
+elif unit = 'pd':
+    result = value/2.2046
+    print(f"对应的公制重量为{result:.3f}公斤")
+else:
+    print("输入格式错误，请以'kg'或'pd'结尾") 
