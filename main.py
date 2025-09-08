@@ -4,7 +4,7 @@ value = float(weight_input[:-2])
 if unit == 'kg':
     result = value * 2.2046
     print(f"对应的英制重量为{result:.3f}磅")
-elif unit == 'pd':
+if unit == 'pd':
     result = value / 2.2046
     print(f"对应的公制重量为{result:.3f}公斤")
 else:
